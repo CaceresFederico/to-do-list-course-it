@@ -2,57 +2,78 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
     background-color: #222;
     color:white;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
 }
 
 h1{
-    font-size: 45px;
+    font-size: 3rem;
     background-color: darkslateblue;
-    padding: 20px 0px;
+    padding: 2rem 0px;
     border-bottom: 2px solid white;
 }
 
 #form{
-    /* border: 2px solid white; */
-    padding: 3% 0px;
-    min-width: 40%;
-    max-width: 80%;
+    max-width: 90%;
     text-align: center;
-    margin: 20px auto;
+    margin: 0px auto;
 }
 
-#form>button{
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    background-color:cornflowerblue;
-    margin-left: 5px;
-    width: 10%;
-    height: 30px;
-    /* border: 2px solid red; */
-}
-
-#inputValue{
-    /* border: 2px solid red; */
-    padding-left: 5px;
-    border-radius: 5px;
-    height: 30px;
+.container{
+    margin: 10px auto;
+    padding: 2rem 0px;
     width: 80%;
 }
 
+#btn{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding:5px;
+    color: #222;
+    border: none;
+    border-radius: 5px;
+    background-color: moccasin;
+    margin-left: 5px;
+    width: 10%;
+    height: 8vh;
+}
+
+#inputValue{
+    padding-left: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    width: 80%;
+    height: 8vh;
+}
+
 #list{
-    padding: 40px 0px;
+    text-align: center;
+    margin-bottom: 5%;
 }
 
 li{
     list-style: none;
-    padding: 10px 0px;
+    padding: 2% 0px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 576px) { 
+
+    #inputValue{
+        width: 100%;
+    }
+    #btn {
+        margin-left: 0px;
+        margin-top: 10px;
+        width: 100%;
+    }
 }
